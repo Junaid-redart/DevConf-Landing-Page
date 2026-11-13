@@ -216,3 +216,144 @@ body {
         line-height: 1.7;
     }
 }
+
+/* =========================
+   Meet the Speakers Section
+========================= */
+
+.speakers-section {
+    padding: 85px 7%;
+    background-color: #f8fafc;
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #64748b;
+}
+
+/* Speakers Grid */
+.speakers-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+/* Speaker Card */
+.speaker-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Speaker Image */
+.speaker-image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+}
+
+/* Speaker Information */
+.speaker-info {
+    padding: 22px;
+}
+
+.speaker-track {
+    display: inline-block;
+    color: #2563eb;
+    background-color: #eff6ff;
+    padding: 6px 11px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.speaker-info h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.speaker-info p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Responsive Speakers Section */
+@media (max-width: 768px) {
+
+    .speakers-section {
+        padding: 65px 5%;
+    }
+
+    .speakers-grid {
+        gap: 18px;
+    }
+
+    .speaker-image {
+        height: 220px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speaker-image {
+        height: 280px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+}
