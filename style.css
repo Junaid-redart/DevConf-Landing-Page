@@ -357,3 +357,487 @@ body {
         font-size: 27px;
     }
 }
+
+
+/* =========================
+   Pricing Section
+========================= */
+
+.pricing-section {
+    padding: 85px 7%;
+    background-color: #ffffff;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+/* Pricing Card */
+.pricing-card {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    padding: 32px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Featured Pro Card */
+.pricing-card.featured {
+    background-color: #172554;
+    border: 2px solid #2563eb;
+    color: #ffffff;
+    transform: translateY(-8px);
+}
+
+.pricing-card.featured:hover {
+    transform: translateY(-13px);
+}
+
+/* Popular Label */
+.popular-label {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #2563eb;
+    color: #ffffff;
+
+    padding: 7px 18px;
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Plan Information */
+.plan-info h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 9px;
+}
+
+.plan-info p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.featured .plan-info h3 {
+    color: #ffffff;
+}
+
+.featured .plan-info p {
+    color: #cbd5e1;
+}
+
+/* Plan Price */
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    margin: 25px 0;
+    color: #111827;
+}
+
+.currency {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 43px;
+    font-weight: 800;
+}
+
+.period {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.featured .plan-price {
+    color: #ffffff;
+}
+
+.featured .period {
+    color: #cbd5e1;
+}
+
+/* Plan Features */
+.plan-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    font-size: 13px;
+    color: #475569;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    line-height: 1.5;
+}
+
+.plan-features li::before {
+    content: "•";
+    color: #2563eb;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.featured .plan-features li {
+    color: #e2e8f0;
+    border-bottom: 1px solid #334155;
+}
+
+.featured .plan-features li::before {
+    color: #60a5fa;
+}
+
+/* Plan Button */
+.plan-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    margin-top: auto;
+    padding: 13px 15px;
+
+    background-color: #eff6ff;
+    color: #2563eb;
+
+    border: 1px solid #2563eb;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: background-color 0.3s ease;
+}
+
+.plan-btn:hover {
+    background-color: #dbeafe;
+}
+
+.featured .plan-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+.featured .plan-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Pricing */
+@media (max-width: 900px) {
+
+    .pricing-grid {
+        gap: 15px;
+    }
+
+    .pricing-card {
+        padding: 28px 18px;
+    }
+
+    .amount {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-5px);
+    }
+}
+.price-period {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.featured .price-period {
+    color: #cbd5e1;
+}
+
+.color-blue {
+     color: #2563eb !important;
+}
+
+
+/* AI Innovation Section */
+.ai-innovation {
+    background: linear-gradient(120deg, #020817, #071b49);
+    color: #ffffff;
+    padding: 100px 6%;
+    overflow: hidden;
+}
+
+.ai-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Left Content */
+.ai-content {
+    flex: 1.2;
+}
+
+.ai-label {
+    display: inline-block;
+    color: #38bdf8;
+    border: 1px solid #2563eb;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.ai-content h2 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.ai-content h2 span {
+    color: #0ea5e9;
+}
+
+.ai-description {
+    color: #b8c8e5;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 570px;
+    margin-bottom: 35px;
+}
+
+/* Feature Cards */
+.ai-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.ai-card {
+    background: rgba(15, 35, 75, 0.65);
+    border: 1px solid #193b75;
+    border-radius: 16px;
+    padding: 22px 18px;
+}
+
+.ai-card h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.ai-card h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.ai-card p {
+    color: #b8c8e5;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Button */
+.ai-button {
+    display: inline-block;
+    background: #0866f5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 17px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.ai-button:hover {
+    background: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+/* Right Visual */
+.ai-visual {
+    flex: 0.8;
+    min-height: 430px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-glow {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: #075cf5;
+    border-radius: 50%;
+    filter: blur(110px);
+    opacity: 0.5;
+}
+
+.ai-chip {
+    width: 230px;
+    height: 190px;
+    background: linear-gradient(145deg, #075cf5, #082b83);
+    border: 4px solid #38bdf8;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-8deg);
+    box-shadow: 0 0 35px #087bff, 0 0 80px #075cf5;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-chip span {
+    font-size: 75px;
+    font-weight: 800;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.ai-icon {
+    position: absolute;
+    width: 85px;
+    height: 75px;
+    background: #102b69;
+    border: 1px solid #2563eb;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #60a5fa;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+.code-icon {
+    top: 35px;
+    left: 10px;
+}
+
+.robot-icon {
+    top: 35px;
+    right: 5px;
+}
+
+.data-icon {
+    bottom: 30px;
+    left: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .ai-container {
+        flex-direction: column;
+    }
+
+    .ai-content {
+        width: 100%;
+    }
+
+    .ai-visual {
+        width: 100%;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ai-content h2 {
+        font-size: 36px;
+    }
+
+    .ai-features {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-innovation {
+        padding: 70px 5%;
+    }
+
+    .ai-chip {
+        width: 180px;
+        height: 150px;
+    }
+
+    .ai-chip span {
+        font-size: 60px;
+    }
+}
+
+.footer {
+    background-color: #0d1b2a;
+    color: #7b8490;
+    padding: 45px 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-right a {
+    color: #7b8490;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
