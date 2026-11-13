@@ -808,15 +808,17 @@ body {
     }
 }
 
+/* Footer */
 .footer {
     background-color: #0d1b2a;
-    color: #7b8490;
-    padding: 45px 7.5%;
+    color: #94a3b8;
+    padding: 30px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, sans-serif;
+    gap: 20px;
     font-size: 13px;
+    border-top: 1px solid #1e293b;
 }
 
 .footer-right {
@@ -825,19 +827,26 @@ body {
 }
 
 .footer-right a {
-    color: #7b8490;
+    color: #94a3b8;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-right a:hover {
-    color: white;
+    color: #ffffff;
 }
 
-/* Responsive */
+/* Responsive Footer */
 @media (max-width: 600px) {
     .footer {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 }
